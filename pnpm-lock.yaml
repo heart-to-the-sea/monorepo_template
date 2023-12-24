@@ -1,0 +1,17 @@
+lockfileVersion: '6.1'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .: {}
+
+  apps/demo:
+    dependencies:
+      '@monorepo_template/utils':
+        specifier: workspace:^
+        version: link:../../packages/utils
+
+  packages/utils: {}
