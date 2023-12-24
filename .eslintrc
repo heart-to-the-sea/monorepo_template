@@ -1,0 +1,14 @@
+{
+  "root": true,
+  // 设置我们使用的解析器，该插件原理是将代码解释为AST语法树
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "eslint:recommended", // eslint内置推荐的配置集合
+    "plugin:@typescript-eslint/recommended", // ts-eslint推荐的默认配置，特定于ts规则
+    "plugin:@typescript-eslint/eslint-recommended" // 禁用 es-lint中已经由eslint处理的规则
+  ],
+  "plugins": [
+    // 我们能够在存储库中使用的typescript-eslint包定义的规则
+    "@typescript-eslint"
+  ]
+}
