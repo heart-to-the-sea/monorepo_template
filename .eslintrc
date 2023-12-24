@@ -5,10 +5,18 @@
   "extends": [
     "eslint:recommended", // eslint内置推荐的配置集合
     "plugin:@typescript-eslint/recommended", // ts-eslint推荐的默认配置，特定于ts规则
-    "plugin:@typescript-eslint/eslint-recommended" // 禁用 es-lint中已经由eslint处理的规则
+    "plugin:@typescript-eslint/eslint-recommended", // 禁用 es-lint中已经由eslint处理的规则
+    "prettier" // 关闭与prettier冲突的规则
   ],
   "plugins": [
     // 我们能够在存储库中使用的typescript-eslint包定义的规则
-    "@typescript-eslint"
-  ]
+    "@typescript-eslint",
+    //
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": "error", // 打开prettier插件提供的规则，该插件从eslint内部和运行prettier
+    "arrow-body-style": "off",
+    "prefer-arrow-callback": "off"
+  }
 }

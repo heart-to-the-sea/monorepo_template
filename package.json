@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "format": "prettier --config .prettierrc '.' --write",
-    "format-watch":"onchange -d 1000 '**/*' -- prettier --config .prettierrc --write {{changed}}",
+    "format-watch": "onchange -d 1000 '**/*' -- prettier --config .prettierrc --write {{changed}}",
     "lint": "eslint ./ --ext .ts,.js,.json --max-warnings=0"
   },
   "keywords": [],
@@ -15,6 +15,8 @@
     "@typescript-eslint/eslint-plugin": "^6.15.0",
     "@typescript-eslint/parser": "^6.15.0",
     "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.2",
     "onchange": "^7.1.0",
     "prettier": "^3.1.1"
   }
