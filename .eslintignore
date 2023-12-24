@@ -1,4 +1,7 @@
 node_modules/
 
-pmpm-lock.yaml
+pnpm-lock.yaml
+
+package.json
+
 .lintstagedrc.js
