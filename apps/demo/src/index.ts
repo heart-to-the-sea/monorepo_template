@@ -1,4 +1,4 @@
-import { add } from "../../../packages/utils/src";
+import { add } from "@monorepo_template/utils";
 
 const num = add(1, 2);
 console.log(num);

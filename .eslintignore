@@ -5,3 +5,5 @@ pnpm-lock.yaml
 package.json
 
 .lintstagedrc.js
+
+README.MD
